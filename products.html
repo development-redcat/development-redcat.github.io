@@ -42,9 +42,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="images/favicons/apple-touch-icon-1024x1024.png">
     <title>Продукция</title>
-    <link rel="stylesheet" href="styles/style.min.css?rev=2612d7b1c9accf0e280f0879ad38f439">
+    <link rel="stylesheet" href="styles/style.css?rev=@@hash">
   </head>
   <body>
+    <div class="dec-line dec-line--1"></div>
+    <div class="dec-line dec-line--2"></div>
+    <div class="dec-line dec-line--3"></div>
+    <div class="dec-line dec-line--4"></div>
     <header class="header" id="header">
       <div class="box header__box">
         <div class="logo"><a class="logo__link" href="/"><img class="logo__img" src="/images/logo.png" alt=""></a></div>
@@ -54,7 +58,7 @@
             <button class="search__button icon-zoom" type="button" name="button-search" aria-label="Search"></button>
           </div>
           <div class="run-stroke"><span class="run-stroke__text">Бегущая строка с онлайн котировками нефтепродуктов</span></div>
-          <div class="contact"><a class="link contact__phone" href="tel:79133219090">+7 (913) 321-90-90</a><a class="button button--light contact__call"><span class="button__text">Заказать обратный звонок</span></a></div>
+          <div class="contact"><a class="link contact__phone" href="tel:79133219090">+7 (913) 321-90-90</a><a class="button button--light contact__call" href="#footer"><span class="button__text">Заказать обратный звонок</span></a></div>
         </div>
         <div class="header__bottom">
           <nav class="menu-top">
@@ -82,62 +86,270 @@
           </nav>
         </div>
       </div>
-    </main>
-    <div class="home-contacts">
-      <div class="home-contacts__box box">
-        <h2 class="title-h2 home-contacts__title">Контакты</h2>
-        <div class="home-contacts__content">
-          <div class="home-contacts__address">
-            <p class="legal">
-              ООО «Актив Петролеум»
-              Юридический адрес: 105066, г. Москва, ул. Доброслободская, д.
-              7/1, стр. 3, этаж 2, помещение I, комната 2, офис 39
-            </p>
-            <p class="unit">
-              Обособленное подразделение: г. Москва, ул. Новокузнецкая, д. 31,
-              строение 1, офис 11
-              Моб.тел: +7 (913) 321 9090
-            </p>
-            <p class="unit">
-              Обособленное подразделение: г. Омск, ул. Герцена 34, 4 этаж
-              Телефон/факс: +7 (3812) 25-07-94, 25-42-66
-              E-mail: aktivp2017@yandex.ru
-            </p>
-          </div>
-          <div class="home-contacts__form-full">
-            <form class="form simple_form form_1 " action="../mail/mail.php" method="post" data-ajax-submit="true" data-validate="true" data-redirect="false" enctype="multipart/form-data">
-              <div class="server_response"></div>
-              <input class="callback_name" id="name" name="name" type="hidden" value="Заявка из формы 'Обратный звонок'">
-              <input class="detected" id="name_detected" name="detected" type="hidden" value="">
-              <div class="top">
-                <div class="left">
-                  <div class="field">
-                    <label class="field__label" for="nameCall">
-                      <input class="field__input input" id="nameCall" type="text" name="name" placeholder="Ваше имя" value="" autocomplete="off"/>
-                    </label>
-                  </div>
-                  <div class="field">
-                    <label class="field__label" for="phoneCall">
-                      <input class="field__input input" id="phoneCall" type="text" name="phone" placeholder="Телефон" value="" autocomplete="off" required=""/>
-                    </label>
-                  </div>
-                </div>
-                <div class="right">
-                  <div class="field">
-                    <label class="field__label" for="textareaCall">
-                      <textarea class="field__textarea textarea" id="textareaCall" name="textarea" placeholder="Сообщение" rows="3" cols="13"></textarea>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="bottom">
-                <button class="submit submit_button button-gr button-gr--gradient enable_when_agree" type="submit" onclick="document.getElementById('callback_detected').value = 'notbot';" title="Заказать звонок" data-original-text="Отправлено" data-submit-text="Отправляю..."><span class="submit__text">Заказать звонок</span></button>
-              </div>
-            </form>
+      <div class="products-benzin">
+        <div class="products-benzin__box box">
+          <h2 class="title-h2 products-benzin__title"><span class="color-accent">Бензин</span></h2>
+          <div class="products-benzin__banners"></div>
+          <div class="spreadsheet products-benzin__spreadsheet">
+            <ul class="spreadsheet__list">
+              <li class="spreadsheet__item item-header">Характеристики автомобильного бензина
+                <div class="spreadsheet__params"><span class="col">Единица<br>измерения</span><span class="col">Показатель</span></div>
+              </li>
+              <li class="spreadsheet__item">Массовая доля серы, не более
+                <div class="spreadsheet__params"><span class="col">мг/кг</span><span class="col">10</span></div>
+              </li>
+              <li class="spreadsheet__item">Объемная доля бензола, не более
+                <div class="spreadsheet__params"><span class="col">процентов</span><span class="col">1</span></div>
+              </li>
+              <li class="spreadsheet__item">Концентрация железа, не более
+                <div class="spreadsheet__params"><span class="col">мг/дм3</span><span class="col">отсутствие</span></div>
+              </li>
+              <li class="spreadsheet__item">Концентрация марганца, не более
+                <div class="spreadsheet__params"><span class="col">мг/дм3</span><span class="col">отсутствие</span></div>
+              </li>
+              <li class="spreadsheet__item">Концентрация свинца, не более
+                <div class="spreadsheet__params"><span class="col">мг/дм3</span><span class="col">отсутствие</span></div>
+              </li>
+              <li class="spreadsheet__item">Массовая доля кислорода, не более
+                <div class="spreadsheet__params"><span class="col">процентов</span><span class="col">2,7</span></div>
+              </li>
+              <li class="spreadsheet__item">Объемная доля углеводородов, не более:
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">процентов</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">ароматических
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">35</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">олефиновых
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">18</span></div>
+              </li>
+              <li class="spreadsheet__item">Давление паров, не более:
+                <div class="spreadsheet__params"><span class="col">кПа</span><span class="col"></span></div>
+              </li>
+              <li class="spreadsheet__sub-item">в летний период
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">45-80</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">в зимний период
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">50-100</span></div>
+              </li>
+              <li class="spreadsheet__item">Объемная доля оксигенатов, не более:
+                <div class="spreadsheet__params"><span class="col">процентов</span><span class="col"></span></div>
+              </li>
+              <li class="spreadsheet__sub-item">метанола
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">отсутствие</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">этанола
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">5</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">изопропанола
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">10</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">третбутунола
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">7</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">изобутанола
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">10</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">эфиров, содержащих 5 или более атомов углерода в молекуле
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">15</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">других оксигенатов (с температурой конца кипения не выше 210 градусов Цельсия)
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">10</span></div>
+              </li>
+              <li class="spreadsheet__item">Объемная доля монометиланилина, не более:
+                <div class="spreadsheet__params"><span class="col">процентов</span><span class="col">отсутствие</span></div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+      <div class="products-diesel">
+        <div class="products-diesel__box box">
+          <h2 class="title-h2 products-diesel__title">
+            Дизельное
+            <span class="color-accent">топливо</span>
+          </h2>
+          <div class="products-diesel__banners"></div>
+          <div class="spreadsheet products-diesel__spreadsheet">
+            <ul class="spreadsheet__list">
+              <li class="spreadsheet__item item-header">Характеристики дизельного топлива
+                <div class="spreadsheet__params"><span class="col">Единица<br>измерения</span><span class="col">Показатель</span></div>
+              </li>
+              <li class="spreadsheet__item">Массовая доля серы, не более
+                <div class="spreadsheet__params"><span class="col">мг/кг</span><span class="col">10</span></div>
+              </li>
+              <li class="spreadsheet__item">Температура вспышки в закрытом тигле, не ниже:
+                <div class="spreadsheet__params"><span class="col">°C</span><span class="col"></span></div>
+              </li>
+              <li class="spreadsheet__sub-item">дизельного топлива, за исключением дизельного топлива для арктического климата
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">40</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">дизельного топлива для арктического климата
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">30</span></div>
+              </li>
+              <li class="spreadsheet__item">Фракционный состав - 95 процентов объемных перегоняется при температуре не выше
+                <div class="spreadsheet__params"><span class="col">°C</span><span class="col">360</span></div>
+              </li>
+              <li class="spreadsheet__item">Массовая доля полициклических ароматических углеводородов, не более
+                <div class="spreadsheet__params"><span class="col">процентов</span><span class="col">11</span></div>
+              </li>
+              <li class="spreadsheet__item">Цетановое число, не менее
+                <div class="spreadsheet__params"><span class="col">-</span><span class="col">51</span></div>
+              </li>
+              <li class="spreadsheet__item">Цетановое число для дизельного топлива для холодного и арктического климата, не менее
+                <div class="spreadsheet__params"><span class="col">-</span><span class="col">47</span></div>
+              </li>
+              <li class="spreadsheet__item">Предельная температура фильтруемости, не выше:
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">°C</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">дизельного топлива для холодного климата
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">минус 20</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">дизельного топлива для арктического климата
+                <div class="spreadsheet__params"><span class="col"></span><span class="col">минус 38</span></div>
+              </li>
+              <li class="spreadsheet__item">Смазывающая способность, не более
+                <div class="spreadsheet__params"><span class="col">мкм</span><span class="col">460</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="products-air">
+        <div class="products-air__box box">
+          <h2 class="title-h2 products-air__title">
+            Бензин
+            <span class="color-accent">авиационный</span>
+          </h2>
+          <div class="products-air__banners"></div>
+          <div class="spreadsheet products-air__spreadsheet">
+            <ul class="spreadsheet__list">
+              <li class="spreadsheet__item item-header">Характеристики авиационного бензина
+                <div class="spreadsheet__params"><span class="col">Единица<br>измерения</span><span class="col">Нормы</span></div>
+              </li>
+              <li class="spreadsheet__item">Октановое число (бедная смесь), не менее
+                <div class="spreadsheet__params"><span class="col">-</span><span class="col">91</span></div>
+              </li>
+              <li class="spreadsheet__item">Сортность (богатая смесь), не менее
+                <div class="spreadsheet__params"><span class="col">-</span><span class="col">115</span></div>
+              </li>
+              <li class="spreadsheet__item">Температура начала кристаллизации, не выше
+                <div class="spreadsheet__params"><span class="col">°C</span><span class="col">минус 60</span></div>
+              </li>
+              <li class="spreadsheet__item">Содержание механических примесей и воды
+                <div class="spreadsheet__params"><span class="col">-</span><span class="col">отсутствие</span></div>
+              </li>
+              <li class="spreadsheet__item">Давление насыщенных паров
+                <div class="spreadsheet__params"><span class="col">кПа</span><span class="col">29,3-49</span></div>
+              </li>
+              <li class="spreadsheet__item">Фракционный состав:
+                <div class="spreadsheet__params"><span class="col"></span><span class="col"></span></div>
+              </li>
+              <li class="spreadsheet__sub-item">10 процентов отгоняется при температуре не выше
+                <div class="spreadsheet__params"><span class="col">°C</span><span class="col">82</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">50 процентов отгоняется при температуре не выше
+                <div class="spreadsheet__params"><span class="col">°C</span><span class="col">105</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">90 процентов отгоняется при температуре не выше
+                <div class="spreadsheet__params"><span class="col">°C</span><span class="col">170</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">остаток от разгонки, не более
+                <div class="spreadsheet__params"><span class="col">процентов</span><span class="col">1,5</span></div>
+              </li>
+              <li class="spreadsheet__sub-item">потери от разгонки, не более
+                <div class="spreadsheet__params"><span class="col">процентов</span><span class="col">1,5</span></div>
+              </li>
+              <li class="spreadsheet__item">Содержание фактических смол, не более
+                <div class="spreadsheet__params"><span class="col">процентов</span><span class="col">3</span></div>
+              </li>
+              <li class="spreadsheet__item">Массовая доля общей серы, не более
+                <div class="spreadsheet__params"><span class="col">мг/100см3</span><span class="col">0,05</span></div>
+              </li>
+              <li class="spreadsheet__item">Цвет
+                <div class="spreadsheet__params"><span class="col">процентов</span><span class="col">зеленый</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="products-marine">
+        <div class="products-marine__box box">
+          <h2 class="title-h2 products-marine__title">
+            Топливо
+            <span class="color-accent">судовое</span>
+          </h2>
+          <div class="products-marine__banners"></div>
+          <div class="spreadsheet products-marine__spreadsheet">
+            <ul class="spreadsheet__list">
+              <li class="spreadsheet__item item-header">Характеристики судового топлива
+                <div class="spreadsheet__params"><span class="col">Единица<br>измерения</span><span class="col">Нормы</span></div>
+              </li>
+              <li class="spreadsheet__item">Массовая доля серы, не более
+                <div class="spreadsheet__params"><span class="col">процентов</span><span class="col">1,5 (с 1 января 2013 г.)</span></div>
+              </li>
+              <li class="spreadsheet__item">Температура вспышки в закрытом тигле, не ниже
+                <div class="spreadsheet__params"><span class="col">°C</span><span class="col">61</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="call-form">
+        <div class="call-form__box box">
+          <h2 class="title-h2 call-form__title">Контакты</h2>
+          <div class="call-form__content">
+            <div class="call-form__address">
+              <p class="legal">
+                ООО «Актив Петролеум»
+                Юридический адрес: 105066, г. Москва, ул. Доброслободская, д.
+                7/1, стр. 3, этаж 2, помещение I, комната 2, офис 39
+              </p>
+              <p class="unit">
+                Обособленное подразделение: г. Москва, ул. Новокузнецкая, д. 31,
+                строение 1, офис 11
+                Моб.тел: +7 (913) 321 9090
+              </p>
+              <p class="unit">
+                Обособленное подразделение: г. Омск, ул. Герцена 34, 4 этаж
+                Телефон/факс: +7 (3812) 25-07-94, 25-42-66
+                E-mail: aktivp2017@yandex.ru
+              </p>
+            </div>
+            <div class="call-form__form-full">
+              <form class="form simple_form form_1 " action="../mail/mail.php" method="post" data-ajax-submit="true" data-validate="true" data-redirect="false" enctype="multipart/form-data">
+                <div class="server_response"></div>
+                <input class="callback_name" id="name" name="name" type="hidden" value="Заявка из формы 'Обратный звонок'">
+                <input class="detected" id="name_detected" name="detected" value="">
+                <div class="top">
+                  <div class="left">
+                    <div class="field">
+                      <label class="field__label" for="nameCall">
+                        <input class="field__input input" id="nameCall" type="text" name="name" placeholder="Ваше имя" value="" autocomplete="off"/>
+                      </label>
+                    </div>
+                    <div class="field">
+                      <label class="field__label" for="phoneCall">
+                        <input class="field__input input" id="phoneCall" type="text" name="phone" placeholder="Телефон" value="" autocomplete="off" required=""/>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="field">
+                      <label class="field__label" for="textareaCall">
+                        <textarea class="field__textarea textarea" id="textareaCall" name="textarea" placeholder="Сообщение" rows="3" cols="13"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <button class="submit submit_button button button--link" type="submit" onclick="document.querySelectorAll('.name_detected').value='notbot';" title="Заказать звонок" data-original-text="Отправлено" data-submit-text="Отправляю..."><span class="submit__text">Заказать звонок</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer" id="footer">
       <div class="box footer__box">
         <div class="footer__logo"><a class="link" href="/"><img class="img" src="/images/logo--white.png" alt=""></a></div>
@@ -158,8 +370,8 @@
         </div>
       </div>
     </footer>
-    <!-- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.min.css")-->
-    <script src="js/vendor.min.js?rev=89d9ae7a0524d832cff102710bc53cd3"></script>
-    <script src="js/main.min.js?rev=81ac2703c356c322e704394fb3fba977"></script>
+    <!-- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css")-->
+    <script src="js/vendor.js?rev=@@hash"></script>
+    <script src="js/main.js?rev=@@hash"></script>
   </body>
 </html>
