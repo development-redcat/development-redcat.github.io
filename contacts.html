@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+
+<!--  Breadcrumbs-->
+<!--  items - pages in array, e.g. (['Main page', 'News'])-->
+<!--  last - last active page in span, e.g. (['Main page', 'News'], 'News detail')--><!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -39,7 +42,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="images/favicons/apple-touch-icon-1024x1024.png">
     <title>Контакты</title>
-    <link rel="stylesheet" href="styles/style.css?rev=@@hash">
+    <link rel="stylesheet" href="styles/style.min.css?rev=48adceb65df83d07c1e69b499501fcb2">
   </head>
   <body>
     <header class="header" id="header">
@@ -56,9 +59,9 @@
         <div class="header__bottom">
           <nav class="menu-top">
             <ul class="menu-top__list">
-              <li class="menu-top__item"><a class="menu-top__link" href="/">Главная</a></li>
+              <li class="menu-top__item"><a class="menu-top__link active" href="index.html">Главная</a></li>
               <li class="menu-top__item"><a class="menu-top__link" href="/about.html">Компания</a></li>
-              <li class="menu-top__item active"><a class="menu-top__link" href="/business.html">Бизнес</a></li>
+              <li class="menu-top__item"><a class="menu-top__link" href="/business.html">Бизнес</a></li>
               <li class="menu-top__item"><a class="menu-top__link" href="/petrol.html">Нефтепродукты</a></li>
               <li class="menu-top__item"><a class="menu-top__link" href="/partners.html">Партнерам</a></li>
               <li class="menu-top__item"><a class="menu-top__link" href="/contacts.html">Контакты</a></li>
@@ -68,19 +71,85 @@
       </div>
     </header>
     <main class="main" id="main">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__box box">
+          <nav class="breadcrumbs__nav">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link link" href="/">Главная</a>
+              </li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link active" href="/">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </main>
+    <div class="home-contacts">
+      <div class="home-contacts__box box">
+        <h2 class="title-h2 home-contacts__title">Контакты</h2>
+        <div class="home-contacts__content">
+          <div class="home-contacts__address">
+            <p class="legal">
+              ООО «Актив Петролеум»
+              Юридический адрес: 105066, г. Москва, ул. Доброслободская, д.
+              7/1, стр. 3, этаж 2, помещение I, комната 2, офис 39
+            </p>
+            <p class="unit">
+              Обособленное подразделение: г. Москва, ул. Новокузнецкая, д. 31,
+              строение 1, офис 11
+              Моб.тел: +7 (913) 321 9090
+            </p>
+            <p class="unit">
+              Обособленное подразделение: г. Омск, ул. Герцена 34, 4 этаж
+              Телефон/факс: +7 (3812) 25-07-94, 25-42-66
+              E-mail: aktivp2017@yandex.ru
+            </p>
+          </div>
+          <div class="home-contacts__form-full">
+            <form class="form simple_form form_1 " action="../mail/mail.php" method="post" data-ajax-submit="true" data-validate="true" data-redirect="false" enctype="multipart/form-data">
+              <div class="server_response"></div>
+              <input class="callback_name" id="name" name="name" type="hidden" value="Заявка из формы 'Обратный звонок'">
+              <input class="detected" id="name_detected" name="detected" type="hidden" value="">
+              <div class="top">
+                <div class="left">
+                  <div class="field">
+                    <label class="field__label">
+                      <input class="field__input uk-input input" type="text" name="name" placeholder="Ваше имя" value="" autocomplete="off"/>
+                    </label>
+                  </div>
+                  <div class="field">
+                    <label class="field__label">
+                      <input class="field__input uk-input input" type="text" name="phone" placeholder="Телефон" value="" autocomplete="off" required=""/>
+                    </label>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="field">
+                    <label class="field__label">
+                      <textarea class="field__textarea uk-textarea textarea" name="textarea" placeholder="Сообщение" rows="3" cols="13"></textarea>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <button class="submit submit_button button-gr button-gr--gradient enable_when_agree" type="submit" onclick="document.getElementById('callback_detected').value = 'notbot';" title="Заказать звонок" data-original-text="Отправлено" data-submit-text="Отправляю..."><span class="submit__text">Заказать звонок</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer" id="footer">
       <div class="box footer__box">
         <div class="footer__logo"><a class="link" href="/"><img class="img" src="/images/logo--white.png" alt=""></a></div>
         <div class="footer__menu">
           <nav class="menu-top">
             <ul class="menu-top__list">
-              <li class="menu-top__item"><a class="menu-top__link" href="/">Главная</a></li>
-              <li class="menu-top__item"><a class="menu-top__link" href="/">Компания</a></li>
-              <li class="menu-top__item active"><a class="menu-top__link" href="/">Бизнес</a></li>
-              <li class="menu-top__item"><a class="menu-top__link" href="/">Нефтепродукты</a></li>
-              <li class="menu-top__item"><a class="menu-top__link" href="/">Партнерам</a></li>
-              <li class="menu-top__item"><a class="menu-top__link" href="/">Контакты</a></li>
+              <li class="menu-top__item"><a class="menu-top__link active" href="index.html">Главная</a></li>
+              <li class="menu-top__item"><a class="menu-top__link" href="/about.html">Компания</a></li>
+              <li class="menu-top__item"><a class="menu-top__link" href="/business.html">Бизнес</a></li>
+              <li class="menu-top__item"><a class="menu-top__link" href="/petrol.html">Нефтепродукты</a></li>
+              <li class="menu-top__item"><a class="menu-top__link" href="/partners.html">Партнерам</a></li>
+              <li class="menu-top__item"><a class="menu-top__link" href="/contacts.html">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -89,8 +158,8 @@
         </div>
       </div>
     </footer>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <script src="js/vendor.js?rev=@@hash"></script>
-    <script src="js/main.js?rev=@@hash"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.min.css">
+    <script src="js/vendor.min.js?rev=89d9ae7a0524d832cff102710bc53cd3"></script>
+    <script src="js/main.min.js?rev=81ac2703c356c322e704394fb3fba977"></script>
   </body>
 </html>
