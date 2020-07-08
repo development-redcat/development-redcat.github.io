@@ -166,25 +166,6 @@
 
 /***/ }),
 
-/***/ "./src/blocks/modules/home/__contacts/home__contacts.js":
-/*!**************************************************************!*\
-  !*** ./src/blocks/modules/home/__contacts/home__contacts.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-modules.define('home__contacts', ['i-bem-dom'], function (provide, bemDom) {
-  provide(bemDom.declElem('home', 'contacts', {
-    onSetMod: {
-      js: {
-        inited: function inited() {}
-      }
-    }
-  }));
-});
-
-/***/ }),
-
 /***/ "./src/blocks/modules/home/__partners/home__partners.js":
 /*!**************************************************************!*\
   !*** ./src/blocks/modules/home/__partners/home__partners.js ***!
@@ -321,9 +302,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_home_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/home/home */ "./src/blocks/modules/home/home.js");
 /* harmony import */ var _modules_home_services_home_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/home/__services/home__services */ "./src/blocks/modules/home/__services/home__services.js");
 /* harmony import */ var _modules_home_partners_home_partners__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/home/__partners/home__partners */ "./src/blocks/modules/home/__partners/home__partners.js");
-/* harmony import */ var _modules_home_contacts_home_contacts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/home/__contacts/home__contacts */ "./src/blocks/modules/home/__contacts/home__contacts.js");
-/* harmony import */ var _modules_home_contacts_home_contacts__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_home_contacts_home_contacts__WEBPACK_IMPORTED_MODULE_4__);
-
 
 
 
