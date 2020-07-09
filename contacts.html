@@ -42,7 +42,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="images/favicons/apple-touch-icon-1024x1024.png">
     <title>Контакты</title>
-    <link rel="stylesheet" href="styles/style.css?rev=@@hash">
+    <link rel="stylesheet" href="styles/style.min.css?rev=beadd8ac97e94f31e1a0384f90b3868f">
   </head>
   <body>
     <div class="dec-line dec-line--1"></div>
@@ -57,7 +57,9 @@
             <input class="search__field" id="search-input" placeholder="Поиск по сайту"><a class="search__select icon-arrow icon-arrow--down" href="/"></a>
             <button class="search__button icon-zoom" type="button" name="button-search" aria-label="Search"></button>
           </div>
-          <div class="run-stroke"><span class="run-stroke__text">Бегущая строка с онлайн котировками нефтепродуктов</span></div>
+          <div class="run-stroke">
+            <iframe id="iframePrice" style="width:100%;border:0;overflow:hidden;background-color:transparent;height:105px" scrolling="no" src="https://fortrader.org/informers/getInformer?st=32&amp;cat=13&amp;title=%D0%A6%D0%B5%D0%BD%D1%8B%20%D0%BD%D0%B0%20%D1%81%D1%8B%D1%80%D1%8C%D0%B5&amp;texts=%7B%22toolTitle%22%3A%22%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%22%2C%22bid%22%3A%22%D0%A6%D0%B5%D0%BD%D0%B0%22%7D&amp;mult=1&amp;showGetBtn=0&amp;w=0&amp;hideDiff=1&amp;colors=titleTextColor%3Dfff%2CtitleBackgroundColor%3Db3b1b1%2CsymbolTextColor%3D444%2CtableTextColor%3D38761d%2CprofitTextColor%3D89bb50%2CprofitBackgroundColor%3Deaf7e1%2ClossTextColor%3Dff1616%2ClossBackgroundColor%3Df6e1e1%2CborderTdColor%3Db3b1b1%2CtableBorderColor%3Db3b1b1%2CtrBackgroundColor%3Df6f6f6%2CinformerLinkTextColor%3D5e5e5e%2CinformerLinkBackgroundColor%3Df6f6f6&amp;items=47%2C25460%2C25461&amp;columns="></iframe><span class="run-stroke__text"></span>
+          </div>
           <div class="contact"><a class="link contact__phone" href="tel:79133219090">+7 (913) 321-90-90</a><a class="button-gr button-gr--gradient button-gr--small contact__call" href="#footer"><span class="button-gr__text">Заказать обратный звонок</span></a></div>
         </div>
         <div class="header__bottom">
@@ -169,8 +171,8 @@
         </div>
       </div>
     </footer>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <script src="js/vendor.js?rev=@@hash"></script>
-    <script src="js/main.js?rev=@@hash"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.min.css">
+    <script src="js/vendor.min.js?rev=09684a859081b8bd79ed8b052785c3fa"></script>
+    <script src="js/main.min.js?rev=84df46ce3edb99dbcf9052dbe5a7162b"></script>
   </body>
 </html>
